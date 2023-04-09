@@ -1,8 +1,23 @@
- {{template "base" .}}
+{{template "base" .}}
 
 {{define "title"}}Домашняя страницы{{end}}
 
 {{define "main"}}
-<h2>Последние заметки</h2>
-<p>Пока здесь ничего нет!</p>
+    <section class="services">
+        <div class="container">
+            <div class="services__box">
+                <h2 class="services__title">НАШИ УСЛУГИ:</h2>
+                <ul class="services__ul">
+                    <li>УСТРАНЕНИЕ ЗАСОРОВ</li>
+                    <li>ЗАМЕНА И РЕМОНТ ТРУБ</li>
+                    <li>УСТРАНЕНИЕ ПРОТЕЧКИ</li>
+                    <li>УСТАНОВКА ТЕХНИКИ</li>
+                    <li>РЕМОНТ САНТЕХНИКИ</li>
+                    <li>УСТАНОВКА ВАННЫ</li>
+                    <li>УСТАНОВКА ВОДОСЧЕТЧИКОВ</li>
+                    <li>И МНОГОЕ ДРУГОЕ...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 {{end}}
