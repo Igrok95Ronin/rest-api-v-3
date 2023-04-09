@@ -11,10 +11,15 @@ func main() {
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/snippet", showSnippet)
 	mux.HandleFunc("/snippet/create", createSnippet)
+	mux.HandleFunc("/plus", plus)
+	mux.HandleFunc("/about", about)
 
-	fileServer := http.FileServer(neuteredFileSystem{http.Dir("./static")})
+	fileServer := http.FileServer(neuteredFileSystem{http.Dir("./ui/static/")})
 	mux.Handle("/static", http.NotFoundHandler())
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
+
+	//fileServer := http.FileServer(http.Dir("./ui/static/"))
+	//mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
 	log.Println("Запуск сервера на http://127.0.0.1:4000")
 	err := http.ListenAndServe(":4000", mux)

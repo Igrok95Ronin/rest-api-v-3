@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df38170d-6b9c-4c9c-9423-48a1ee389231" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/restapi-v-3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/handlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/html/base.layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/html/base.layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/html/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/html/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/static/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/go/go1.20.1" />
   <component name="Git.Settings">
@@ -26,30 +41,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
-    "full.screen.before.presentation.mode": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/SOFT/1SET/OpenServer/domains/test.ru/Golang/restapi-v-4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "sshConsole"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SOFT/1SET/OpenServer/domains/test.ru/Golang/restapi-v-3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;sshConsole&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Go Build.applinux">
+}</component>
+  <component name="RunManager" selected="Go Build.go build restapi-v-3/cmd/web">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="restapi-v-3" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="restapi-v-3" />
+      <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="GOOS" value="linux" />
+        <env name="GOARCH" value="amd64" />
+      </envs>
+      <kind value="DIRECTORY" />
+      <package value="restapi-v-3" />
+      <directory value="$PROJECT_DIR$/cmd/web" />
+      <filePath value="$PROJECT_DIR$/cmd/web/test.go" />
+      <output_directory value="$PROJECT_DIR$/" />
+      <option name="run" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="applinux" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -65,13 +96,14 @@
       <option name="run" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="go build restapi-v-3" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build restapi-v-3/cmd/web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="restapi-v-3" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
+      <kind value="DIRECTORY" />
       <package value="restapi-v-3" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$/cmd/web" />
+      <filePath value="$PROJECT_DIR$/test.go" />
+      <output_directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -85,11 +117,12 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.applinux" />
-      <item itemvalue="Go Build.go build restapi-v-3" />
+      <item itemvalue="Go Build.app" />
+      <item itemvalue="Go Build.go build restapi-v-3/cmd/web" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build restapi-v-3" />
+        <item itemvalue="Go Build.go build restapi-v-3/cmd/web" />
       </list>
     </recent_temporary>
   </component>

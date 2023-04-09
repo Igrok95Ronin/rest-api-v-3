@@ -1,30 +1,64 @@
 {{define "base"}}
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset='utf-8'>
-    <title>{{template "title" .}} - Snippetbox</title>
-    <!-- Ссылка на CSS стили и иконку сайта -->
-    <link rel='stylesheet' href='/static/css/main.css'>
-    <link rel='shortcut icon' href='/static/img/favicon.ico' type='image/x-icon'>
-    <!-- Подключаем новый шрифт для сайта от Google Fonts -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>{{template "title" .}}</title>
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-    <header>
-       <h1><a href='/'>Snippetbox</a></h1>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <h1 class="header__title">САНТЕХНИК ГРОЗНЫЙ</h1>
+                <nav>
+                    <ul class="header__ul">
+                        <li class="header__li"><a href="./" class="header__link">ГЛАВНАЯ</a></li>
+                        <li class="header__li"><a href="plus" class="header__link">НАШИ ПЛЮСЫ</a></li>
+                        <li class="header__li"><a href="about" class="header__link">О НАС</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__btn">111222333</a>
+            </div>
+        </div>
     </header>
-    <nav>
-        <a href='/'>Домашняя страница</a>
-    </nav>
-    <main>
-        {{template "main" .}}
-    </main>
-    <footer>
-        {{template "footer" .}}
+    {{template "main" .}}
+    <section class="mainFon">
+        <div class="container">
+
+            <img class="mainFon__img" src="../static/img/slide-1.jpg" alt="" >
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services__box">
+                <h2 class="services__title">НАШИ УСЛУГИ:</h2>
+                <ul class="services__ul">
+                    <li>УСТРАНЕНИЕ ЗАСОРОВ</li>
+                    <li>ЗАМЕНА И РЕМОНТ ТРУБ</li>
+                    <li>УСТРАНЕНИЕ ПРОТЕЧКИ</li>
+                    <li>УСТАНОВКА ТЕХНИКИ</li>
+                    <li>РЕМОНТ САНТЕХНИКИ</li>
+                    <li>УСТАНОВКА ВАННЫ</li>
+                    <li>УСТАНОВКА ВОДОСЧЕТЧИКОВ</li>
+                    <li>И МНОГОЕ ДРУГОЕ...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <h3 class="footer__title">
+                    МЫ РАБОТАЕМ 24 ЧАСА СУТКИ <br>СКИДКИ ПОСТОЯННЫМ КЛИЕНТАМ
+                </h3>
+                <a href="#" class="header__btn">111222333</a>
+            </div>
+        </div>
     </footer>
-    <!-- Подключаем JS чтобы сделать сайт более динамичным -->
-    <script src="/static/js/main.js" type="text/javascript">
+    {{template "footer" .}}
 </body>
 </html>
 {{end}}

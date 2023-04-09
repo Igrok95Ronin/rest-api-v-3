@@ -53,3 +53,10 @@ func createSnippet(w http.ResponseWriter, r *http.Request) {
 
 	w.Write([]byte("Создание новой заметки..."))
 }
+
+func plus(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("plus"))
+}
+func about(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("about"))
+}
